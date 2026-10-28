@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roohani | Soulful Heritage Dining · Gulshan, Dhaka</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: {
+              950: '#0B0B0C',
+              900: '#111113',
+              850: '#161619',
+              800: '#1D1D22',
+              700: '#2A2A31',
+              600: '#3D3D47'
+            },
+            champagne: {
+              DEFAULT: '#D4AF37',
+              light: '#E6C665',
+              dark: '#B08E24',
+              soft: '#C5A059'
+            },
+            ivory: {
+              DEFAULT: '#F8F6F0',
+              muted: '#B8B5AE',
+              dim: '#85827C'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom refined styling */
+    body {
+      background-color: #0B0B0C;
+      color: #F8F6F0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      selection-background-color: #C5A059;
+      selection-color: #0B0B0C;
+    }
+
+    ::selection {
+      background: #C5A059;
+      color: #0B0B0C;
+    }
+
+    /* Subtle custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0B0C;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2A2A31;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C5A059;
+    }
+
+    .glass-nav {
+      background: rgba(11, 11, 12, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F8F6F0 20%, #E6C665 65%, #C5A059 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .border-glow:hover {
+      border-color: rgba(212, 175, 55, 0.45);
+      box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.12);
+    }
+  </style>
+</head>
+<body class="bg-noir-950 text-ivory antialiased">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="border-b border-noir-800/80 bg-noir-900/60 py-2 px-4 text-xs tracking-wider text-ivory-dim text-center flex flex-wrap justify-center items-center gap-4">
+    <span class="flex items-center gap-1.5 text-champagne-light">
+      <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne-light text-champagne-light"></i>
+      <span class="font-medium text-ivory">4.7 / 5.0</span> (21+ Verified Reviews on Google)
+    </span>
+    <span class="hidden sm:inline text-noir-700">•</span>
+    <span class="flex items-center gap-1.5">
+      <i data-lucide="map-pin" class="w-3 h-3 text-champagne-soft"></i>
+      Plot 10, Shop 5, Metropolitan Shopping Plaza, Gulshan, Dhaka 1212
+    </span>
+    <span class="hidden sm:inline text-noir-700">•</span>
+    <a href="tel:01332848949" class="hover:text-champagne transition-colors flex items-center gap-1">
+      <i data-lucide="phone" class="w-3 h-3 text-champagne-soft"></i> 01332848949
+    </a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-noir-800 transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="group flex flex-col">
+        <span class="font-serif text-2xl sm:text-3xl tracking-[0.25em] uppercase text-ivory font-light group-hover:text-champagne-light transition-colors">
+          ROOHANI
+        </span>
+        <span class="text-[9px] uppercase tracking-[0.35em] text-champagne-soft font-medium -mt-0.5">
+          Gulshan • Dhaka
+        </span>
+      </a>
+
+      <!-- Desktop Menu Items -->
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.18em] text-ivory-muted font-normal">
+        <a href="#about" class="hover:text-champagne transition-colors">Philosophy</a>
+        <a href="#menu" class="hover:text-champagne transition-colors">Curated Menu</a>
+        <a href="#experience" class="hover:text-champagne transition-colors">Ambience</a>
+        <a href="#reviews" class="hover:text-champagne transition-colors">Critique</a>
+        <a href="#location" class="hover:text-champagne transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Button Group -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:01332848949" class="px-4 py-2.5 rounded-full border border-noir-700 hover:border-champagne/40 text-ivory text-xs tracking-wider transition-all flex items-center gap-2 hover:bg-noir-850">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-champagne"></i>
+          <span>Call 01332848949</span>
+        </a>
+        <a href="#reserve" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-champagne-dark via-champagne to-champagne-light text-noir-950 font-medium text-xs tracking-wider transition-transform hover:scale-[1.03] active:scale-[0.98] shadow-lg shadow-champagne/10">
+          Reserve Table
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="md:hidden p-2 text-ivory-muted hover:text-white rounded-lg hover:bg-noir-850 focus:outline-none">
+        <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-noir-800 bg-noir-900/95 px-6 py-6 transition-all">
+      <nav class="flex flex-col gap-4 text-sm tracking-widest uppercase text-ivory-muted">
+        <a href="#about" class="mobile-nav-link py-2 border-b border-noir-800 hover:text-champagne">Philosophy</a>
+        <a href="#menu" class="mobile-nav-link py-2 border-b border-noir-800 hover:text-champagne">Curated Menu</a>
+        <a href="#experience" class="mobile-nav-link py-2 border-b border-noir-800 hover:text-champagne">Ambience</a>
+        <a href="#reviews" class="mobile-nav-link py-2 border-b border-noir-800 hover:text-champagne">Reviews (4.7★)</a>
+        <a href="#location" class="mobile-nav-link py-2 border-b border-noir-800 hover:text-champagne">Location & Hours</a>
+      </nav>
+      <div class="mt-6 flex flex-col gap-3">
+        <a href="tel:01332848949" class="w-full py-3 rounded-lg border border-champagne/40 text-champagne flex items-center justify-center gap-2 text-xs font-medium tracking-wider">
+          <i data-lucide="phone" class="w-4 h-4"></i> Direct Call: 01332848949
+        </a>
+        <a href="#reserve" class="mobile-nav-link w-full py-3 rounded-lg bg-champagne text-noir-950 text-center font-medium text-xs tracking-wider">
+          Book Table Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-24 sm:py-32">
+      <!-- Background Ambient Glow & Imagery -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop" 
+          alt="Artisanal Dining Ambiance" 
+          class="w-full h-full object-cover object-center filter brightness-[0.22] contrast-[1.1] scale-105 transition-transform duration-1000"
+          id="heroImg"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/70 to-transparent"></div>
+        <div class="absolute inset-0 bg-radial-gradient from-transparent via-noir-950/40 to-noir-950"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
+        <!-- Rating pill -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-noir-900/80 border border-champagne/30 backdrop-blur-md mb-8 animate-fade-in">
+          <div class="flex text-champagne">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+            <i data-lucide="star-half" class="w-3.5 h-3.5 fill-champagne"></i>
+          </div>
+          <span class="text-xs text-ivory tracking-wide">
+            <strong class="text-champagne font-semibold">4.7 / 5.0</strong> &middot; Gulshan's Revered Fine Dining
+          </span>
+        </div>
+
+        <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight leading-[1.08] mb-6">
+          Soulful Flavours. <br>
+          <span class="italic font-serif gold-gradient-text font-normal">Timeless Heritage.</span>
+        </h1>
+
+        <p class="max-w-2xl text-ivory-muted text-base sm:text-lg font-light leading-relaxed mb-10 text-center">
+          Nestled in the heart of Metropolitan Shopping Plaza, Gulshan. Roohani curates an intimate symphony of slow-cooked Persian aromatics, royal Awadhi spices, and contemporary Dhaka grace.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <a href="#reserve" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-champagne-dark via-champagne to-champagne-light text-noir-950 font-medium text-sm tracking-wider uppercase shadow-xl shadow-champagne/15 hover:shadow-champagne/25 hover:brightness-105 transition-all text-center">
+            Reserve Your Evening
+          </a>
+          <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-full border border-noir-700 bg-noir-900/60 backdrop-blur text-ivory text-sm tracking-wider uppercase hover:border-champagne/40 hover:bg-noir-850 transition-all text-center flex items-center justify-center gap-2">
+            <span>Explore Menu</span>
+            <i data-lucide="arrow-down" class="w-4 h-4 text-champagne-soft"></i>
+          </a>
+        </div>
+
+        <!-- Quick location strip indicator -->
+        <div class="mt-16 pt-8 border-t border-noir-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6 text-left w-full max-w-3xl">
+          <div>
+            <span class="block text-[11px] uppercase tracking-widest text-champagne-soft">Location</span>
+            <span class="text-xs text-ivory font-light">Metropolitan Plaza, Gulshan-2</span>
+          </div>
+          <div>
+            <span class="block text-[11px] uppercase tracking-widest text-champagne-soft">Service Hours</span>
+            <span class="text-xs text-ivory font-light">12:30 PM – 11:30 PM Daily</span>
+          </div>
+          <div class="col-span-2 sm:col-span-1">
+            <span class="block text-[11px] uppercase tracking-widest text-champagne-soft">Direct Concierge</span>
+            <a href="tel:01332848949" class="text-xs text-ivory hover:text-champagne transition-colors font-light">01332848949</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: THE PHILOSOPHY / ABOUT -->
+    <section id="about" class="py-24 sm:py-32 border-t border-noir-800/80 bg-noir-900/40 relative">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Image Collage -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative z-10 rounded-2xl overflow-hidden border border-noir-800 shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop" 
+                alt="Roohani Gulshan Interior and Culinary Art" 
+                class="w-full h-[460px] object-cover object-center filter brightness-90 hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <!-- Floating accent card -->
+            <div class="absolute -bottom-6 -right-4 sm:-right-6 z-20 bg-noir-900/95 border border-champagne/30 p-6 rounded-xl backdrop-blur-md shadow-2xl max-w-xs">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="font-serif text-3xl text-champagne">4.7</span>
+                <div class="flex text-champagne">
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+                </div>
+              </div>
+              <p class="text-xs text-ivory-muted leading-relaxed">
+                "An unforgettable sanctuary in Gulshan for aromatic hand-crafted roasts and unmatched hospitable warmth."
+              </p>
+            </div>
+          </div>
+
+          <!-- Narrative Text -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="inline-block text-xs uppercase tracking-[0.3em] text-champagne font-semibold">
+              The Soul Of Dining
+            </span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal leading-tight text-ivory">
+              Where Ancient Charcoal Meets Pure Culinary Poetry.
+            </h2>
+            <div class="h-0.5 w-16 bg-champagne-soft"></div>
+            <p class="text-ivory-muted text-sm sm:text-base leading-relaxed font-light">
+              <strong class="text-ivory font-medium">Roohani</strong> (meaning <em>spiritual</em> or <em>of the soul</em>) was conceived to restore the lost majesty of slow-charcoal cooking, gentle saffron infusions, and royal court delicacies to modern Dhaka.
+            </p>
+            <p class="text-ivory-muted text-sm sm:text-base leading-relaxed font-light">
+              Located conveniently in <span class="text-ivory">Metropolitan Shopping Plaza, Gulshan</span>, we source prime artisan cuts, ground hand-roasted spices daily, and let marinades breathe overnight in unglazed clay. Every plate tells an intimate story of indulgence, balance, and quiet grandeur.
+            </p>
+
+            <!-- Key pillars -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-6 border-t border-noir-800">
+              <div>
+                <h4 class="font-serif text-xl text-champagne mb-1">Dum Pukht</h4>
+                <p class="text-xs text-ivory-dim">Slow simmered in sealed clay vessels</p>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl text-champagne mb-1">Artisanal</h4>
+                <p class="text-xs text-ivory-dim">Kashmiri saffron & hand-pounded spices</p>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl text-champagne mb-1">Gulshan</h4>
+                <p class="text-xs text-ivory-dim">Calm, secluded & elevated ambience</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CURATED MENU -->
+    <section id="menu" class="py-24 sm:py-32 relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-[0.3em] text-champagne font-semibold">Catering to the Connoisseur</span>
+          <h2 class="font-serif text-4xl sm:text-5xl font-light text-ivory mt-2 mb-4">
+            The Curated Menu
+          </h2>
+          <p class="text-ivory-muted text-sm font-light">
+            Each creation is prepared fresh to order using heirloom spices and heritage techniques. Prices in Bangladeshi Taka (BDT ৳).
+          </p>
+
+          <!-- Interactive Category Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mt-8 p-1.5 rounded-full bg-noir-900 border border-noir-800 max-w-xl mx-auto">
+          <button onclick="filterMenu('all', this)" class="menu-tab-btn active px-4 py-2 rounded-full text-xs font-medium tracking-wider transition-all bg-champagne text-noir-950">
+            All Creations
+          </button>
+          <button onclick="filterMenu('kebabs', this)" class="menu-tab-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider text-ivory-muted hover:text-ivory transition-all">
+            Sigdi & Kebabs
+          </button>
+          <button onclick="filterMenu('biryani', this)" class="menu-tab-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider text-ivory-muted hover:text-ivory transition-all">
+            Royal Dum Biryani
+          </button>
+          <button onclick="filterMenu('curries', this)" class="menu-tab-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider text-ivory-muted hover:text-ivory transition-all">
+            Heritage Curries
+          </button>
+          <button onclick="filterMenu('sweets', this)" class="menu-tab-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider text-ivory-muted hover:text-ivory transition-all">
+            Dessert & Elixirs
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Grid with Culinary Photos -->
+      <div id="menuContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8">
+        
+        <!-- Item 1: Galouti Kebab -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="kebabs"
+             onclick="openDishModal('Roohani Galouti Kebab', '৳ 780', 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=1200&auto=format&fit=crop', 'Melt-in-mouth smoked lamb patties infused with 32 secret Lucknow spices, served over bite-sized saffron sheermaal with hand-pressed mint glaze.', 'Sigdi & Kebabs', 'Mild - Delicate Warmth', 'Gluten, Dairy (Desi Ghee)', 'Smoked with betel nut & clove coal embers')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=800&auto=format&fit=crop" 
+              alt="Roohani Galouti Kebab"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wider bg-champagne text-noir-950 font-semibold shadow-md">
+              Chef's Signature
+            </span>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 780
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Roohani Galouti Kebab
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Smoked lamb patties infused with 32 Lucknow spices, served over hand-stretched saffron sheermaal.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="flame" class="w-3 h-3 text-champagne"></i> Sigdi Charcoal</span>
+              <span class="text-champagne-soft font-medium">Chef's Pride</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Murgh Malai Zaffrani -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="kebabs"
+             onclick="openDishModal('Murgh Malai Zaffrani', '৳ 690', 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop', 'Tender chicken supreme steeped overnight in clotted cream, green cardamom, roasted cashews, Kashmiri saffron mist, and roasted over slow embers.', 'Sigdi & Kebabs', 'Mild Creamy', 'Dairy, Cashews', 'Tandoor charred with saffron butter basting')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" 
+              alt="Murgh Malai Zaffrani"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 690
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Murgh Malai Zaffrani
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Tender chicken steeped in clotted cream, green cardamom, roasted cashews, and Kashmiri saffron mist.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="sparkles" class="w-3 h-3 text-champagne"></i> Clay Tandoor</span>
+              <span class="text-champagne-soft font-medium">Silky Mild</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Kacchi Dum Biryani -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="biryani"
+             onclick="openDishModal('Kacchi Dum Biryani (Gulshan Khaas)', '৳ 920', 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=1200&auto=format&fit=crop', 'Slow-cooked layers of aged fragrant chinigura & basmati rice, milk-marinated baby mutton, caramel shallots, and golden potato steeped in sealed dough vessels for 4 hours. Served with mint borhani.', 'Royal Dum Biryani', 'Medium Aromatic', 'Dairy (Ghee, Curd)', 'Clay pot dough seal cracked tableside')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800&auto=format&fit=crop" 
+              alt="Kacchi Dum Biryani"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wider bg-champagne text-noir-950 font-semibold shadow-md">
+              Chef's Signature
+            </span>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 920
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Kacchi Dum Biryani
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Aged basmati, milk-marinated baby mutton, golden shallots, saffron, and spiced borhani.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3 h-3 text-champagne"></i> 4-Hour Dum Pukht</span>
+              <span class="text-champagne-soft font-medium">House Special</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Murgh Parda Biryani -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="biryani"
+             onclick="openDishModal('Murgh Parda Biryani', '৳ 840', 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=1200&auto=format&fit=crop', 'Fragrant chicken pieces tossed with wild saffron, mace, and royal mint, baked entirely under a delicate flaky flour veil that seals pure botanical moisture.', 'Royal Dum Biryani', 'Medium Balanced', 'Gluten, Ghee', 'Unveiled tableside with floral aromatics')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop" 
+              alt="Murgh Parda Biryani"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 840
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Murgh Parda Biryani
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Spiced royal chicken baked under a delicate crust, preserving aromas until sliced open at your table.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="shield" class="w-3 h-3 text-champagne"></i> Pastry Encased</span>
+              <span class="text-champagne-soft font-medium">Awadhi Heritage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Nalli Nihari Khaas -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="curries"
+             onclick="openDishModal('Nalli Nihari Khaas', '৳ 890', 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=1200&auto=format&fit=crop', 'Eight-hour simmered prime shank stew laced with dry ginger, Kashmiri chilies, rose petal infusion, and bone marrow butter. Finished with crisp garlic and coriander sprigs.', 'Heritage Curries', 'Rich & Warming', 'Dairy, Bone Marrow', 'Pairs seamlessly with fresh Roghani Naan')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=800&auto=format&fit=crop" 
+              alt="Nalli Nihari Khaas"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wider bg-champagne text-noir-950 font-semibold shadow-md">
+              Chef's Signature
+            </span>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 890
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Nalli Nihari Khaas
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Slow-simmered shank stew with dry ginger, star anise, rose petals, and marrow butter drizzle.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="flame" class="w-3 h-3 text-champagne"></i> 8-Hour Simmer</span>
+              <span class="text-champagne-soft font-medium">Royal Stew</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Dal-e-Roohani -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="curries"
+             onclick="openDishModal('Dal-e-Roohani', '৳ 520', 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=1200&auto=format&fit=crop', 'Whole black urad lentils stewed on low charcoal embers for 24 hours with organic butter, sun-ripened plum tomatoes, and toasted dried fenugreek leaves.', 'Heritage Curries', 'Mild Velvety', 'Dairy (Butter, Cream)', 'Slow coal ember reduction')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=800&auto=format&fit=crop" 
+              alt="Dal-e-Roohani"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 520
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Dal-e-Roohani
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Black lentils simmered gently for 24 hours on coal embers with vine tomatoes and organic butter.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="sparkles" class="w-3 h-3 text-champagne"></i> 24-Hour Embers</span>
+              <span class="text-emerald-400 font-medium">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Shahi Tukda Nawabi -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="sweets"
+             onclick="openDishModal('Shahi Tukda Nawabi', '৳ 440', 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1200&auto=format&fit=crop', 'Crisp clarified-butter brioche immersed in dense reduced rabri, edible 24K silver leaf (varq), Iranian pistachio slivers, and fragrant rose petal drizzle.', 'Dessert & Elixirs', 'Rich Sweetness', 'Gluten, Milk, Pistachio, Almonds', 'Served warm with chilled pistachio rabri')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800&auto=format&fit=crop" 
+              alt="Shahi Tukda Nawabi"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 440
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Shahi Tukda Nawabi
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Clarified-butter brioche immersed in reduced rabri, edible silver varq, and Iranian pistachios.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="heart" class="w-3 h-3 text-champagne"></i> Artisan Confection</span>
+              <span class="text-champagne-soft font-medium">Silver Varq</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Zaffrani Badam Sharbat -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="sweets"
+             onclick="openDishModal('Zaffrani Badam Sharbat', '৳ 380', 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop', 'Stone-ground almond milk laced with hand-picked saffron strands, crushed green cardamom pods, edible wild roses, and plump basil seeds. Chilled to perfection.', 'Dessert & Elixirs', 'Refreshing & Botanical', 'Almonds, Milk', 'Served in handcrafted earthen pottery')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop" 
+              alt="Zaffrani Badam Sharbat"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 380
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Zaffrani Badam Sharbat
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Cold stone-ground almond elixir with saffron strands, cardamom, and aromatic basil seeds.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="coffee" class="w-3 h-3 text-champagne"></i> Chilled Elixir</span>
+              <span class="text-champagne-soft font-medium">Heritage Tonic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9: Zafrani Mutton Boti Kebab -->
+        <div class="menu-item group bg-noir-900/80 border border-noir-800 rounded-2xl overflow-hidden transition-all duration-500 border-glow flex flex-col justify-between cursor-pointer" 
+             data-category="kebabs"
+             onclick="openDishModal('Zafrani Mutton Boti Kebab', '৳ 820', 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop', 'Tender boneless chunks of prime mutton marinated in raw papaya, roasted gram flour, shahi jeera, and cold-pressed mustard oil, blistered over hot mango wood coals.', 'Sigdi & Kebabs', 'Medium Spiced', 'Mustard Oil, Dairy', 'Skewer charred with fresh lemon-coriander emulsion')">
+          <div class="relative h-56 sm:h-60 overflow-hidden bg-noir-950">
+            <img 
+              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop" 
+              alt="Zafrani Mutton Boti Kebab"
+              class="w-full h-full object-cover object-center group-hover:scale-108 group-hover:brightness-105 transition-all duration-700 ease-out"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-900 via-transparent to-black/30"></div>
+            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-xs font-serif bg-noir-950/85 backdrop-blur border border-champagne/40 text-champagne">
+              ৳ 820
+            </span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-noir-950/40 backdrop-blur-[2px]">
+              <span class="px-3.5 py-1.5 rounded-full bg-noir-900/90 border border-champagne/50 text-[11px] text-ivory flex items-center gap-1.5 tracking-wider uppercase font-medium">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-champagne"></i> View Story
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h3 class="font-serif text-xl sm:text-2xl text-ivory font-medium group-hover:text-champagne transition-colors">
+                  Zafrani Mutton Boti Kebab
+                </h3>
+              </div>
+              <p class="text-ivory-muted text-xs leading-relaxed font-light line-clamp-2">
+                Tender boneless mutton morsels blistered over mango wood charcoal with shahi jeera.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-noir-800/80 flex items-center justify-between text-[11px] text-ivory-dim">
+              <span class="flex items-center gap-1"><i data-lucide="flame" class="w-3 h-3 text-champagne"></i> Wood Charcoal</span>
+              <span class="text-champagne-soft font-medium">Prime Cuts</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Menu Note -->
+        <div class="mt-12 text-center">
+          <p class="text-xs text-ivory-dim tracking-wide">
+            Looking for customized tasting menus, corporate dinners, or catering in Gulshan?
+            <a href="tel:01332848949" class="text-champagne underline underline-offset-4 hover:text-champagne-light ml-1 font-medium">Inquire with our Head Chef: 01332848949</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: ATMOSPHERE & EXPERIENCE -->
+    <section id="experience" class="py-24 bg-noir-900/70 border-y border-noir-800/80 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-xs uppercase tracking-[0.3em] text-champagne font-semibold">The Ambience</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-light text-ivory mt-2 mb-6 leading-tight">
+              An Intimate Respite in the Heart of Gulshan
+            </h2>
+            <p class="text-ivory-muted text-sm leading-relaxed mb-6 font-light">
+              Designed with dim brass sconces, dark walnut finishes, and bespoke seating, Roohani offers an escape from the rush of Dhaka. Whether you are hosting an intimate family banquet or celebrating an anniversary, every table guarantees privacy and thoughtful attention.
+            </p>
+            
+            <ul class="space-y-4 text-xs sm:text-sm text-ivory-muted">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-champagne shrink-0"></i>
+                <span>Private booth seating & family dining arrangements</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-champagne shrink-0"></i>
+                <span>Metropolitan Plaza parking access with convenient elevator proximity</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-champagne shrink-0"></i>
+                <span>Handcrafted crockery and custom tableware curated for heritage plating</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-champagne shrink-0"></i>
+                <span>Curated ambient soundtrack tailored for quiet conversation</span>
+              </li>
+            </ul>
+
+            <div class="mt-8 flex items-center gap-6">
+              <div class="text-center sm:text-left">
+                <span class="font-serif text-3xl text-ivory">Shop #5</span>
+                <span class="block text-[11px] text-ivory-dim uppercase tracking-wider">Ground Floor Access</span>
+              </div>
+              <div class="h-8 w-px bg-noir-700"></div>
+              <div class="text-center sm:text-left">
+                <span class="font-serif text-3xl text-champagne">Plot #10</span>
+                <span class="block text-[11px] text-ivory-dim uppercase tracking-wider">Metropolitan Plaza</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <img 
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" 
+                alt="Roohani Mood Interior" 
+                class="rounded-xl object-cover h-64 w-full border border-noir-800 shadow-lg"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?q=80&w=800&auto=format&fit=crop" 
+                alt="Culinary Preparation" 
+                class="rounded-xl object-cover h-40 w-full border border-noir-800 shadow-lg"
+              />
+            </div>
+            <div class="space-y-4 pt-8">
+              <img 
+                src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" 
+                alt="Fine Cutlery Table Set" 
+                class="rounded-xl object-cover h-40 w-full border border-noir-800 shadow-lg"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1507048821117-657942f128f1?q=80&w=800&auto=format&fit=crop" 
+                alt="Warm Ambient Glow" 
+                class="rounded-xl object-cover h-64 w-full border border-noir-800 shadow-lg"
+              />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: TABLE RESERVATION -->
+    <section id="reserve" class="py-24 sm:py-32 relative">
+      <div class="max-w-4xl mx-auto px-6">
+        
+        <div class="text-center mb-12">
+          <span class="text-xs uppercase tracking-[0.3em] text-champagne font-semibold">Hospitality Reserved</span>
+          <h2 class="font-serif text-4xl sm:text-5xl font-light text-ivory mt-2 mb-3">
+            Secure Your Table
+          </h2>
+          <p class="text-ivory-muted text-sm font-light max-w-lg mx-auto">
+            Due to our intimate seating capacity, we recommend reserving at least 3 hours in advance. For immediate same-day bookings, call 
+            <a href="tel:01332848949" class="text-champagne font-medium hover:underline">01332848949</a>.
+          </p>
+        </div>
+
+        <!-- Reservation Card Form -->
+        <div class="bg-noir-900 border border-noir-800 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+          <div class="absolute -top-24 -right-24 w-60 h-60 bg-champagne/5 rounded-full blur-3xl pointer-events-none"></div>
+
+          <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-6 relative z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <!-- Full Name -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-ivory-muted mb-2 font-medium" for="guestName">
+                  Guest Name *
+                </label>
+                <input 
+                  type="text" 
+                  id="guestName" 
+                  required 
+                  placeholder="e.g. Tanvir Chowdhury" 
+                  class="w-full bg-noir-950 border border-noir-700 rounded-xl px-4 py-3 text-ivory text-sm focus:border-champagne focus:outline-none transition-colors"
+                />
+              </div>
+
+              <!-- Phone Number -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-ivory-muted mb-2 font-medium" for="guestPhone">
+                  Phone Number *
+                </label>
+                <input 
+                  type="tel" 
+                  id="guestPhone" 
+                  required 
+                  placeholder="01XXXXXXXXX" 
+                  class="w-full bg-noir-950 border border-noir-700 rounded-xl px-4 py-3 text-ivory text-sm focus:border-champagne focus:outline-none transition-colors"
+                />
+              </div>
+
+              <!-- Guest Count -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-ivory-muted mb-2 font-medium" for="guestCount">
+                  Party Size *
+                </label>
+                <select 
+                  id="guestCount" 
+                  required
+                  class="w-full bg-noir-950 border border-noir-700 rounded-xl px-4 py-3 text-ivory text-sm focus:border-champagne focus:outline-none transition-colors"
+                >
+                  <option value="2">2 Guests (Table for Two)</option>
+                  <option value="3-4" selected>3 - 4 Guests (Family Table)</option>
+                  <option value="5-8">5 - 8 Guests (Private Banquet)</option>
+                  <option value="9+">9+ Guests (Large Gathering)</option>
+                </select>
+              </div>
+
+              <!-- Date -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-ivory-muted mb-2 font-medium" for="reserveDate">
+                  Date *
+                </label>
+                <input 
+                  type="date" 
+                  id="reserveDate" 
+                  required 
+                  class="w-full bg-noir-950 border border-noir-700 rounded-xl px-4 py-3 text-ivory text-sm focus:border-champagne focus:outline-none transition-colors text-ivory-muted"
+                />
+              </div>
+
+              <!-- Time Slot -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-ivory-muted mb-2 font-medium" for="reserveTime">
+                  Time Slot *
+                </label>
+                <select 
+                  id="reserveTime" 
+                  required
+                  class="w-full bg-noir-950 border border-noir-700 rounded-xl px-4 py-3 text-ivory text-sm focus:border-champagne focus:outline-none transition-colors"
+                >
+                  <optgroup label="Lunch Service">
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="01:30 PM">01:30 PM</option>
+                    <option value="02:30 PM">02:30 PM</option>
+                  </optgroup>
+                  <optgroup label="Dinner Service">
+                    <option value="07:00 PM">07:00 PM</option>
+                    <option value="08:00 PM" selected>08:00 PM</option>
+                    <option value="09:00 PM">09:00 PM</option>
+                    <option value="10:00 PM">10:00 PM</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <!-- Seating Preference -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-ivory-muted mb-2 font-medium" for="seatingPref">
+                  Seating Ambience
+                </label>
+                <select 
+                  id="seatingPref" 
+                  class="w-full bg-noir-950 border border-noir-700 rounded-xl px-4 py-3 text-ivory text-sm focus:border-champagne focus:outline-none transition-colors"
+                >
+                  <option value="Main Dining Hall">Main Dining Hall</option>
+                  <option value="Quiet Corner Booth">Quiet Corner Booth</option>
+                  <option value="Celebration / Family Table">Celebration / Family Table</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Special Requests -->
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-ivory-muted mb-2 font-medium" for="specialNotes">
+                Special Occasion or Dietary Preferences (Optional)
+              </label>
+              <textarea 
+                id="specialNotes" 
+                rows="2" 
+                placeholder="Birthday, anniversary setup, low spice level, or high chairs needed..."
+                class="w-full bg-noir-950 border border-noir-700 rounded-xl px-4 py-3 text-ivory text-sm focus:border-champagne focus:outline-none transition-colors"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-2">
+              <button 
+                type="submit" 
+                class="w-full py-4 rounded-xl bg-gradient-to-r from-champagne-dark via-champagne to-champagne-light text-noir-950 font-semibold text-sm uppercase tracking-widest hover:brightness-105 active:scale-[0.99] transition-all shadow-xl shadow-champagne/15"
+              >
+                Confirm Reservation Request
+              </button>
+              <p class="text-center text-[11px] text-ivory-dim mt-3">
+                Our reservation desk will confirm your table shortly via phone or WhatsApp at 01332848949.
+              </p>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: REVIEWS (4.7 RATING HIGHLIGHT) -->
+    <section id="reviews" class="py-24 bg-noir-900/50 border-t border-noir-800">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <span class="text-xs uppercase tracking-[0.3em] text-champagne font-semibold">Guest Praise</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-light text-ivory mt-2">
+              Revered by Gulshan Food Lovers
+            </h2>
+          </div>
+          <div class="flex items-center gap-4 bg-noir-950 border border-noir-800 px-6 py-4 rounded-2xl">
+            <div class="text-right">
+              <div class="flex items-center justify-end text-champagne gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+              </div>
+              <span class="text-xs text-ivory-dim">Google Maps Score</span>
+            </div>
+            <div class="font-serif text-4xl text-champagne font-bold">4.7</div>
+            <div class="text-xs text-ivory-dim pl-2 border-l border-noir-800">
+              <strong class="text-ivory block font-medium">21+ Reviews</strong>
+              Gulshan Branch
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Review 1 -->
+          <div class="bg-noir-950 border border-noir-800 rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex text-champagne mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+              </div>
+              <p class="text-ivory-muted text-sm font-light leading-relaxed mb-6 italic">
+                "Roohani is an absolute hidden gem in Metropolitan Shopping Plaza! The Galouti Kebab literally dissolves on the tongue and the Dum Biryani aroma reminds me of authentic regal recipes. Gulshan desperately needed this kind of quiet elegance."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-noir-850">
+              <div class="w-9 h-9 rounded-full bg-noir-800 border border-champagne/40 flex items-center justify-center font-serif text-sm text-champagne">
+                SH
+              </div>
+              <div>
+                <span class="text-xs font-medium text-ivory block">Saad Hasan</span>
+                <span class="text-[10px] text-ivory-dim">Local Guide &middot; Gulshan-2</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-noir-950 border border-noir-800 rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex text-champagne mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+              </div>
+              <p class="text-ivory-muted text-sm font-light leading-relaxed mb-6 italic">
+                "The atmosphere is warm, peaceful, and unpretentious. The staff was remarkably courteous, attending to our family dinner with genuine warmth. Their Murgh Malai and Shahi Tukda are unmatched in Dhaka."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-noir-850">
+              <div class="w-9 h-9 rounded-full bg-noir-800 border border-champagne/40 flex items-center justify-center font-serif text-sm text-champagne">
+                FN
+              </div>
+              <div>
+                <span class="text-xs font-medium text-ivory block">Farzana Nuzhat</span>
+                <span class="text-[10px] text-ivory-dim">Verified Google Reviewer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-noir-950 border border-noir-800 rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex text-champagne mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+              </div>
+              <p class="text-ivory-muted text-sm font-light leading-relaxed mb-6 italic">
+                "Booked a table for an anniversary dinner over the phone (01332848949). The management was so responsive! Exceptional slow-cooked Nihari with hot fluffy naan. 4.7 stars well deserved."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-noir-850">
+              <div class="w-9 h-9 rounded-full bg-noir-800 border border-champagne/40 flex items-center justify-center font-serif text-sm text-champagne">
+                RM
+              </div>
+              <div>
+                <span class="text-xs font-medium text-ivory block">Rashedul Munir</span>
+                <span class="text-[10px] text-ivory-dim">Gulshan Resident</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: LOCATION, HOURS & CONTACT -->
+    <section id="location" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Details Left -->
+          <div class="lg:col-span-5 space-y-8">
+            <div>
+              <span class="text-xs uppercase tracking-[0.3em] text-champagne font-semibold">Find Roohani</span>
+              <h2 class="font-serif text-3xl sm:text-5xl font-light text-ivory mt-2 mb-4">
+                Our Gulshan Sanctuary
+              </h2>
+              <p class="text-ivory-muted text-sm font-light leading-relaxed">
+                Situated inside the renowned Metropolitan Shopping Plaza. Easily accessible from both Gulshan 1 & 2 circles.
+              </p>
+            </div>
+
+            <!-- Address Card -->
+            <div class="bg-noir-900 border border-noir-800 rounded-2xl p-6 space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-champagne/10 border border-champagne/30 flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5 text-champagne"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-champagne font-semibold mb-1">Precise Address</h4>
+                  <p class="text-sm text-ivory font-light leading-snug">
+                    Plot no - 10, Shop no - 5, <br>
+                    Metropolitan Shopping Plaza, <br>
+                    Dhaka 1212, Bangladesh
+                  </p>
+                </div>
+              </div>
+
+              <!-- Direct Calling -->
+              <div class="flex items-start gap-4 pt-4 border-t border-noir-800">
+                <div class="w-10 h-10 rounded-xl bg-champagne/10 border border-champagne/30 flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5 text-champagne"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-champagne font-semibold mb-1">Direct Reservations</h4>
+                  <a href="tel:01332848949" class="text-sm font-medium text-ivory hover:text-champagne transition-colors block">
+                    01332848949
+                  </a>
+                  <span class="text-[11px] text-ivory-dim">Available via Phone & WhatsApp</span>
+                </div>
+              </div>
+
+              <!-- Opening Hours -->
+              <div class="flex items-start gap-4 pt-4 border-t border-noir-800">
+                <div class="w-10 h-10 rounded-xl bg-champagne/10 border border-champagne/30 flex items-center justify-center shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5 text-champagne"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-champagne font-semibold mb-1">Service Hours</h4>
+                  <p class="text-xs text-ivory font-light leading-relaxed">
+                    <span class="text-ivory-muted">Lunch:</span> 12:30 PM &ndash; 04:00 PM <br>
+                    <span class="text-ivory-muted">Dinner:</span> 06:30 PM &ndash; 11:30 PM <br>
+                    <span class="text-champagne-light text-[11px] font-medium">Open 7 Days a Week</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action Links -->
+            <div class="flex flex-wrap gap-3">
+              <a 
+                href="https://wa.me/8801332848949?text=Hello%20Roohani%20Gulshan,%20I%20would%20like%20to%20inquire%20about%20a%20table%20reservation." 
+                target="_blank" 
+                class="flex-1 py-3 px-4 rounded-xl bg-noir-900 border border-noir-700 hover:border-champagne/40 text-ivory text-xs font-medium tracking-wider flex items-center justify-center gap-2 hover:bg-noir-850 transition-all"
+              >
+                <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
+                <span>WhatsApp Roohani</span>
+              </a>
+              <a 
+                href="tel:01332848949" 
+                class="flex-1 py-3 px-4 rounded-xl bg-champagne text-noir-950 text-xs font-semibold tracking-wider flex items-center justify-center gap-2 hover:brightness-105 transition-all"
+              >
+                <i data-lucide="phone-outgoing" class="w-4 h-4"></i>
+                <span>Call Concierge</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Interactive Simulated Map & Directions -->
+          <div class="lg:col-span-7 flex flex-col">
+            <div class="w-full h-full min-h-[380px] bg-noir-900 border border-noir-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden">
+              
+              <!-- Map decorative graphic -->
+              <div class="absolute inset-0 opacity-20 pointer-events-none">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D4AF37" stroke-width="0.5"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+              </div>
+
+              <!-- Top Map Details -->
+              <div class="relative z-10 flex flex-wrap justify-between items-start gap-4">
+                <div>
+                  <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-champagne bg-champagne/10 px-3 py-1 rounded-full border border-champagne/20">
+                    <span class="w-2 h-2 rounded-full bg-champagne animate-pulse"></span>
+                    Dhaka 1212 Destination
+                  </span>
+                  <h3 class="font-serif text-2xl text-ivory font-medium mt-3">Metropolitan Shopping Plaza</h3>
+                  <p class="text-xs text-ivory-dim mt-1">Plot 10, Shop 5 &middot; Gulshan, Dhaka</p>
+                </div>
+                <div class="bg-noir-950/80 border border-noir-700/80 px-3 py-2 rounded-xl text-right">
+                  <span class="text-[11px] text-ivory-dim block">Verified Rating</span>
+                  <span class="text-champagne font-bold text-sm">★ 4.7 (21 reviews)</span>
+                </div>
+              </div>
+
+              <!-- Center Interactive visual marker -->
+              <div class="relative z-10 my-10 flex flex-col items-center justify-center text-center">
+                <div class="relative">
+                  <div class="w-16 h-16 rounded-full bg-champagne/20 flex items-center justify-center animate-ping absolute inset-0"></div>
+                  <div class="w-16 h-16 rounded-full bg-noir-950 border-2 border-champagne flex items-center justify-center shadow-xl relative z-10">
+                    <i data-lucide="utensils" class="w-7 h-7 text-champagne"></i>
+                  </div>
+                </div>
+                <h4 class="font-serif text-xl text-ivory mt-4">Roohani - Gulshan</h4>
+                <p class="text-xs text-ivory-muted max-w-sm mt-1 font-light">
+                  Shop no- 5 &middot; Ground Level Easy Walk-in
+                </p>
+              </div>
+
+              <!-- Bottom Actions -->
+              <div class="relative z-10 pt-4 border-t border-noir-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <span class="text-xs text-ivory-dim">Postal Code: 1212 &middot; Gulshan Circle</span>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Plot+no+-+10,+Shop+no-+5,+Metropolitan+Shopping+Plaza,+Dhaka+1212" 
+                  target="_blank" 
+                  class="w-full sm:w-auto px-5 py-2.5 rounded-full bg-noir-950 border border-champagne/40 text-champagne text-xs font-medium tracking-wider hover:bg-champagne hover:text-noir-950 transition-all flex items-center justify-center gap-2"
+                >
+                  <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
+                  <span>Get Driving Directions</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONFIRMATION MODAL (HIDDEN BY DEFAULT) -->
+  <div id="bookingModal" class="fixed inset-0 z-50 bg-noir-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-noir-900 border border-champagne/40 rounded-3xl p-8 max-w-md w-full shadow-2xl relative text-center">
+      <div class="w-16 h-16 rounded-full bg-champagne/10 border border-champagne/40 mx-auto flex items-center justify-center text-champagne mb-5">
+        <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+      </div>
+      <h3 class="font-serif text-2xl text-ivory mb-2">Reservation Received</h3>
+      <p class="text-xs text-ivory-muted leading-relaxed mb-6 font-light">
+        Thank you, <span id="modalGuestName" class="text-champagne font-medium">Guest</span>. We have noted your request for <span id="modalDetails" class="text-ivory font-medium">your party</span> at Roohani Gulshan.
+      </p>
+      
+      <div class="bg-noir-950 rounded-xl p-4 text-left border border-noir-800 text-xs text-ivory-dim mb-6 space-y-1.5">
+        <p><strong class="text-ivory">Location:</strong> Plot 10, Shop 5, Metropolitan Shopping Plaza, Dhaka 1212</p>
+        <p><strong class="text-ivory">Contact Desk:</strong> 01332848949</p>
+        <p><strong class="text-champagne-light">Status:</strong> Confirmation call pending</p>
+      </div>
+
+      <button onclick="closeModal()" class="w-full py-3 rounded-full bg-champagne text-noir-950 text-xs font-semibold tracking-wider uppercase hover:brightness-105 transition-all">
+        Wonderful, Thank You
+      </button>
+    </div>
+  </div>
+
+  <!-- DISH DETAILS & PHOTO LIGHTBOX MODAL -->
+  <div id="dishModal" class="fixed inset-0 z-50 bg-noir-950/85 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300">
+    <div class="bg-noir-900 border border-champagne/35 rounded-3xl max-w-2xl w-full shadow-2xl overflow-hidden relative flex flex-col md:flex-row animate-fade-in">
+      <button onclick="closeDishModal()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-noir-950/80 border border-noir-700 text-ivory hover:text-champagne flex items-center justify-center transition-all">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <!-- Modal Image -->
+      <div class="w-full md:w-1/2 h-56 md:h-auto relative overflow-hidden bg-noir-950">
+        <img id="dishModalImg" src="" alt="Dish Preview" class="w-full h-full object-cover object-center" />
+        <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-noir-900 via-transparent to-transparent"></div>
+        <span id="dishModalCategory" class="absolute top-4 left-4 text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-noir-950/80 border border-champagne/40 text-champagne font-medium backdrop-blur">
+          Category
+        </span>
+      </div>
+
+      <!-- Modal Details -->
+      <div class="p-6 md:p-8 w-full md:w-1/2 flex flex-col justify-between">
+        <div>
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 id="dishModalTitle" class="font-serif text-2xl sm:text-3xl text-ivory font-light leading-snug">Dish Name</h3>
+          </div>
+          <span id="dishModalPrice" class="font-serif text-2xl text-champagne block mb-4">৳ 000</span>
+          
+          <p id="dishModalDesc" class="text-xs text-ivory-muted leading-relaxed font-light mb-6">
+            Detailed culinary preparation notes.
+          </p>
+
+          <div class="space-y-2.5 pt-4 border-t border-noir-800 text-[11px] text-ivory-dim">
+            <div class="flex items-center justify-between">
+              <span class="text-ivory-muted">Spice Palette:</span>
+              <span id="dishModalSpice" class="text-champagne-light">Delicate</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-ivory-muted">Allergens / Base:</span>
+              <span id="dishModalAllergen" class="text-ivory">Ghee, Nuts</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-ivory-muted">Plating & Dum:</span>
+              <span id="dishModalNote" class="text-ivory">Tableside finish</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-4 flex gap-3">
+          <a href="#reserve" onclick="closeDishModal()" class="flex-1 py-3 rounded-full bg-champagne text-noir-950 font-medium text-xs tracking-wider text-center uppercase hover:brightness-105 transition-all">
+            Reserve For This Dish
+          </a>
+          <a href="tel:01332848949" class="p-3 rounded-full border border-noir-700 hover:border-champagne/50 text-champagne flex items-center justify-center transition-all">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-noir-800 bg-noir-950 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <!-- Brand Info -->
+        <div class="md:col-span-2 space-y-4">
+          <span class="font-serif text-3xl tracking-[0.25em] uppercase text-ivory font-light block">
+            ROOHANI
+          </span>
+          <p class="text-xs text-ivory-dim leading-relaxed max-w-sm font-light">
+            An artisanal ode to slow Mughlai, Awadhi, and Persian heritage in Gulshan, Dhaka. Crafted for those who appreciate patient simmering, saffron warmth, and quiet hospitality.
+          </p>
+          <div class="flex items-center gap-3 text-champagne pt-2">
+            <span class="text-xs text-ivory-dim">Google Rating:</span>
+            <div class="flex">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-champagne"></i>
+              <i data-lucide="star-half" class="w-3.5 h-3.5 fill-champagne"></i>
+            </div>
+            <span class="text-xs text-ivory font-medium">4.7 / 5.0 (21 Reviews)</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-champagne font-semibold mb-4">Discover</h4>
+          <ul class="space-y-2.5 text-xs text-ivory-dim font-light">
+            <li><a href="#about" class="hover:text-champagne transition-colors">Culinary Heritage</a></li>
+            <li><a href="#menu" class="hover:text-champagne transition-colors">Signature Dum Biryani</a></li>
+            <li><a href="#menu" class="hover:text-champagne transition-colors">Charcoal Sigdi Kebabs</a></li>
+            <li><a href="#reserve" class="hover:text-champagne transition-colors">Private Table Bookings</a></li>
+            <li><a href="#reviews" class="hover:text-champagne transition-colors">Verified Guest Critique</a></li>
+          </ul>
+        </div>
+
+        <!-- Address & Contact -->
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-champagne font-semibold mb-4">Roohani Gulshan</h4>
+          <p class="text-xs text-ivory-dim leading-relaxed mb-3 font-light">
+            Plot no - 10, Shop no - 5, <br>
+            Metropolitan Shopping Plaza, <br>
+            Dhaka 1212, Bangladesh
+          </p>
+          <a href="tel:01332848949" class="text-xs text-champagne hover:underline block font-medium">
+            Phone: 01332848949
+          </a>
+          <span class="text-[11px] text-ivory-dim block mt-1">Lunch & Dinner Service Daily</span>
+        </div>
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="pt-8 border-t border-noir-850 flex flex-col sm:flex-row items-center justify-between text-[11px] text-ivory-dim gap-4">
+        <p>&copy; <span id="currentYear"></span> Roohani Restaurant Gulshan. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#about" class="hover:text-ivory transition-colors">Privacy & Terms</a>
+          <a href="tel:01332848949" class="hover:text-ivory transition-colors">Concierge Desk</a>
+          <a href="#location" class="hover:text-ivory transition-colors">Dhaka 1212</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT FOR INTERACTIONS -->
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+
+    // Set Current Year in Footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Default Date to Tomorrow for reservations
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const dateInput = document.getElementById('reserveDate');
+    if (dateInput) {
+      dateInput.value = tomorrow.toISOString().split('T')[0];
+      dateInput.min = new Date().toISOString().split('T')[0];
+    }
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close Mobile Menu on link click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Menu Filtering functionality
+    function filterMenu(category, clickedButton) {
+      const items = document.querySelectorAll('.menu-item');
+      const buttons = document.querySelectorAll('.menu-tab-btn');
+
+      // Update button styling
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-champagne', 'text-noir-950');
+        btn.classList.add('text-ivory-muted');
+      });
+      clickedButton.classList.add('bg-champagne', 'text-noir-950');
+      clickedButton.classList.remove('text-ivory-muted');
+
+      // Filter grid
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Reservation Form Handler
+    function handleReservationSubmit(event) {
+      event.preventDefault();
+      
+      const guestName = document.getElementById('guestName').value;
+      const guestPhone = document.getElementById('guestPhone').value;
+      const guestCount = document.getElementById('guestCount').value;
+      const reserveDate = document.getElementById('reserveDate').value;
+      const reserveTime = document.getElementById('reserveTime').value;
+
+      // Update and Show Modal
+      document.getElementById('modalGuestName').textContent = guestName;
+      document.getElementById('modalDetails').textContent = `${guestCount} guests on ${reserveDate} at ${reserveTime}`;
+      
+      const modal = document.getElementById('bookingModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+
+      // Reset form
+      document.getElementById('reservationForm').reset();
+      if (dateInput) {
+        dateInput.value = tomorrow.toISOString().split('T')[0];
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('bookingModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Dish Lightbox / Story Modal functions
+    function openDishModal(title, price, imgUrl, description, category, spice, allergen, note) {
+      document.getElementById('dishModalTitle').textContent = title;
+      document.getElementById('dishModalPrice').textContent = price;
+      document.getElementById('dishModalImg').src = imgUrl;
+      document.getElementById('dishModalDesc').textContent = description;
+      document.getElementById('dishModalCategory').textContent = category;
+      document.getElementById('dishModalSpice').textContent = spice;
+      document.getElementById('dishModalAllergen').textContent = allergen;
+      document.getElementById('dishModalNote').textContent = note;
+
+      const modal = document.getElementById('dishModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      lucide.createIcons();
+    }
+
+    function closeDishModal() {
+      const modal = document.getElementById('dishModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Close dish modal when clicking outside box
+    document.getElementById('dishModal')?.addEventListener('click', (e) => {
+      if (e.target.id === 'dishModal') {
+        closeDishModal();
+      }
+    });
+  </script>
+
+</body>
+</html>
